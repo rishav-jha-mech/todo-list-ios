@@ -1,10 +1,10 @@
 # Todo List
 
-App 2 of 10 in a SwiftUI learning series.
+After 4+ years building apps in React Native and Flutter, time to go native. This is app 2 of 10.
 
 ## Goal
 
-<!-- what you set out to learn with this app -->
+Move past static layout into real state and persistence: CRUD on a list, `@Observable` for the data layer, `List` with swipe actions, and `Codable` + `UserDefaults` to survive app restarts.
 
 ## What it does
 
@@ -18,8 +18,11 @@ A todo list with add, complete-toggle, delete, and persistence across app launch
 
 ## What I learned
 
-<!-- fill in after building -->
+- `@Observable` (the newer macro, not `ObservableObject` + `@Published`) is a lot less boilerplate than I expected — no property wrappers on every field, SwiftUI just tracks what a view actually reads.
+- `Codable` synthesizing encode/decode for free is genuinely nice — no manual `toJson`/`fromJson` like I'd write in Dart, no serializer setup like RN would need.
+- `List` + `.onDelete` gives you swipe-to-delete essentially for free, which would take actual gesture handling to replicate in RN.
+- UserDefaults is fine for this scale but I can already tell it won't hold up once an app needs querying/relationships — good excuse to move to SwiftData in app 3.
 
 ## What I'd do differently
 
-<!-- fill in after building -->
+- The store logic (add/toggle/delete) isn't unit-testable in isolation from UserDefaults without injecting a custom suite — did that here, but would bake dependency injection in from the start next time instead of retrofitting it.
