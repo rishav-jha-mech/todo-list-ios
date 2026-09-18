@@ -18,10 +18,10 @@ A todo list with add, complete-toggle, delete, and persistence across app launch
 
 ## What I learned
 
-- `@Observable` (the newer macro, not `ObservableObject` + `@Published`) is a lot less boilerplate than I expected — no property wrappers on every field, SwiftUI just tracks what a view actually reads.
-- `Codable` synthesizing encode/decode for free is genuinely nice — no manual `toJson`/`fromJson` like I'd write in Dart, no serializer setup like RN would need.
+- `@Observable` (the newer macro, not `ObservableObject` + `@Published`) is a lot less boilerplate than I expected. No property wrappers on every field, SwiftUI just tracks what a view actually reads.
+- `Codable` synthesizing encode/decode for free is genuinely nice. No manual `toJson`/`fromJson` like I'd write in Dart, no serializer setup like RN would need.
 - `List` + `.onDelete` gives you swipe-to-delete essentially for free, which would take actual gesture handling to replicate in RN.
-- UserDefaults is fine for this scale but I can already tell it won't hold up once an app needs querying/relationships — good excuse to move to SwiftData in app 3.
+- UserDefaults is fine for this scale but I can already tell it won't hold up once an app needs querying/relationships. Good excuse to move to SwiftData in app 3.
 
 ## What I'd do differently
 
@@ -29,7 +29,7 @@ A todo list with add, complete-toggle, delete, and persistence across app launch
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
 
 ---
 
