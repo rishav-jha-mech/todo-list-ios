@@ -25,4 +25,12 @@ A todo list with add, complete-toggle, delete, and persistence across app launch
 
 ## What I'd do differently
 
-- The store logic (add/toggle/delete) isn't unit-testable in isolation from UserDefaults without injecting a custom suite — did that here, but would bake dependency injection in from the start next time instead of retrofitting it.
+<!-- fill in after building -->
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+Built by [Rishav Jha](https://rishavjha.com)
