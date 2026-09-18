@@ -10,6 +10,10 @@ App 2 of 10 in a SwiftUI learning series.
 
 A todo list with add, complete-toggle, delete, and persistence across app launches via UserDefaults.
 
+## Screenshot
+
+![Todo List screenshot](screenshots/todolist.png)
+
 ## What I learned
 
 <!-- fill in after building -->
